@@ -1,0 +1,11 @@
+/*测试文件*/
+@import  "index.css";
+@import "none.css";
+@import "sa.scss";
+/*公共变量*/
+@import "variables";
+@import "mixins";
+//基础样式 重置浏览器所有样式
+@import "base";
+//面板组件
+@import "panel";

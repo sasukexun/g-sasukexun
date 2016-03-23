@@ -1,0 +1,236 @@
+/*
+* Component:		  Variables  变量
+* Description:		全部的自定义变量
+* =============================================================================
+*/
+
+/*
+* 为防止与第三方样式引起冲突，拟启用全局命名空间，所有定义的样式名称需全局引用命名空间变量 $ns
+* 定义全局的命名空间namespace
+* -----------------------------------------------------------------------------
+*/
+$ns:  unquote("sa-") !default;
+
+/*
+* 黑色 - 白色 - 灰色 全局定义
+* -----------------------------------------------------------------------------
+*/
+$black:            #000 !default;
+$white:            #fff !default;
+$gray:            lighten($black, 33.5%); // #555
+$gray-darker:     lighten($black, 13.5%); // #222
+$gray-dark:       lighten($black, 20%);   // #333
+$gray-light:      lighten($black, 60%);   // #999
+$gray-lighter:    lighten($black, 93.5%); // #eee
+
+/*
+* 全局背景和边框定义
+* -----------------------------------------------------------------------------
+*/
+$global-background: 				$white !default;
+$global-border: 					  #ddd !default;
+
+/*
+* UI风格主色调
+* -----------------------------------------------------------------------------
+*/
+
+$global-primary: 	    #0e90d2; // #157EFB; //#428bca !default;
+$global-secondary:     lighten($global-primary, 15%) !default;
+$global-success: 	    #5eb95e; // #53D76A; //#5cb85c !default;
+$global-warning: 	    #ff6600; // #FD9426; // #f0ad4e #F37B1D !default;
+$global-danger: 		    #dd514c; // #FC3159; //#da314b !default;
+$global-info:          $global-secondary !default;
+
+
+/*
+* 全局间隔
+* =============================================================================
+*/
+
+$global-spacing:                 10px !default;
+$global-spacing-xs:              0.5rem !default;
+$global-spacing-sm:              1rem !default;
+$global-spacing-lg:              2.4rem !default;
+$global-spacing-xl:              3.2rem !default;
+
+// 全局圆角
+// -----------------------------------------------------------------------------
+
+$global-radius:          0 !default;
+$radius-normal:          3px !default;
+$radius-lg:              5px !default;
+$radius-sm:              1px !default;
+
+$global-rounded:          1000px !default;
+$global-square:            0 !default;
+
+/*
+* UI全局字体
+* -----------------------------------------------------------------------------
+*
+* FreeSans: Linux发行版中使用的默认字体，包括centOS 及 Ubuntu
+* Arimo: Chrome OS 中使用的默认字体.
+* Droid Sans: Android中使用的默认字体.
+* Roboto: Android4.0以后所使用的字体
+* Helvetica, Arial, sans-serif: OS X 和 Windows常见字体.
+* Helvetica Neue: iOS 、 OS X 10.10 系统中新加入并且使用的新字体，不再使用旧的 Lucida Grande 字体
+* 设定的依据：http://morrick.me/archives/6873
+* 字体设置指南及中文开发中的字体声明：http://www.kendraschaefer.com/2012/06/chinese-standard-web-fonts-the-ultimate-guide-to-css-font-family-declarations-for-web-design-in-simplified-chinese/
+* Helvetica 字体
+* apple.com: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana,
+*/
+
+$font-family-sans-serif:  "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans","wenquanyi micro hei","Hiragino Sans GB", "Hiragino Sans GB W3", "FontAwesome", sans-serif !default;
+
+$font-family-serif: Georgia, "Times New Roman", Times, SimSun, "FontAwesome", serif; //FangSong, STFangSong
+
+$font-family-monospace:  Monaco, Menlo, Consolas, "Courier New", "FontAwesome", monospace !default;
+
+$font-family-kai:  Georgia, "Times New Roman", Times, Kai, "Kaiti SC", KaiTi, BiauKai, "FontAwesome", serif !default;
+
+// Font  size
+// -----------------------------------------------------------------------------
+
+$global-font-size:				12px; //16px
+$global-line-height: 			1.6 !default;
+$font-size-base:           $global-font-size !default;
+
+$line-height-base:         $global-line-height !default;
+$line-height-computed:    floor($font-size-base * $line-height-base); // 2
+
+$font-size-xxs:           $global-font-size - 4; // 10px - 1rem
+$font-size-xs:            $global-font-size ; // 10px
+$font-size-sm:            $global-font-size ; // 14px
+//$font-size-default:     $global-font-size;       // 16px
+$font-size-lg:            $global-font-size + 6; // 18px
+$font-size-xl:            $global-font-size + 12; // 24px
+$font-size-xxl:           $global-font-size * 2;   // 32px
+$font-size-xxxl:          $global-font-size * 2 + 10; // 42px
+
+// Base
+// =============================================================================
+
+$base-background: 					  $global-background !default;
+$base-font-family: 					  $font-family-sans-serif !default;
+$base-font-weight: 					  normal !default;
+$base-font-size: 					  $global-font-size !default;
+$base-line-height: 					  $global-line-height !default;
+$base-text-color: 					  $gray-dark !default;
+
+// em element
+$base-em-color: 					  #D05 !default;
+
+// ins element
+$base-ins-background: 				  #ffa !default;
+$base-ins-color: 					  $gray-dark !default;
+
+// mark element
+$base-mark-background: 					#ffa !default;
+$base-mark-color: 						$gray-dark !default;
+
+// selection
+$base-selection-background: 			$global-primary !default;
+$base-selection-color: 					$white !default;
+
+$base-margin-vertical: 					$global-spacing !default;
+
+// h1 - h6 element
+$base-heading-font-weight: 				600 !default;
+$base-heading-margin-top: 				10px !default;
+
+// hr
+$base-hr-border: 						$gray-lighter !default;
+
+// blockquote
+$base-blockquote-border: 				$global-border !default;
+$base-blockquote-small-color: 			$gray-light !default;
+$base-blockquote-font-size:				16px; // 16px
+$base-blockquote-line-height:			1.5; // 22px
+
+// =============================================================================
+// Component Common
+// =============================================================================
+
+$component-active-color:          #fff !default;
+$component-active-bg:             $global-warning !default;
+
+
+
+
+// Responsive variables
+// =============================================================================
+
+// Breakpoint
+// -----------------------------------------------------------------------------
+
+$breakpoint-small:            640px;  // 0 - 640px
+$breakpoint-medium:           1024px; // 641 - 1024px
+$breakpoint-large:            1280px; // 1025 - 1280px
+$breakpoint-xl:               1440px; // 1281 - 1440px
+$breakpoint-xxl:              1920px; // 1441 -1920px
+
+$breakpoint-small-max:         $breakpoint-small !default;
+$breakpoint-md:               $breakpoint-small-max; // legacy var, DO NOT USE IT
+
+$breakpoint-medium-min:        ($breakpoint-small + 1) !default;
+$breakpoint-medium-max:        $breakpoint-medium !default;
+
+$breakpoint-large-min:         ($breakpoint-medium + 1) !default;
+$breakpoint-large-max:         $breakpoint-large !default;
+
+$breakpoint-xl-min:            ($breakpoint-large + 1) !default;
+$breakpoint-xl-max:            $breakpoint-xl !default;
+
+$breakpoint-xxl-min:           ($breakpoint-xl + 1) !default;
+$breakpoint-xxl-max:           $breakpoint-xxl !default;
+
+
+// body
+// -----------------------------------------------------------------------------
+
+$body-bg:                $white !default;
+$text-color:             $gray-dark !default;
+
+// Links
+// -----------------------------------------------------------------------------
+
+$link-color:               $base-text-color !default;
+$link-hover-color:          $global-warning !default; /*darken($link-color, 15%)*/
+
+$global-contrast-color: 	  $white !default;
+
+
+// Margin
+// -----------------------------------------------------------------------------
+
+$global-margin: 									  $global-spacing !default;
+
+$global-margin-xs: 							  $global-spacing-xs !default;
+$global-margin-sm: 							  $global-spacing-sm !default;
+
+$global-margin-lg: 							  $global-spacing-lg !default;
+$global-margin-xl: 							  $global-spacing-xl !default;
+
+// =============================================================================
+// Z-index
+// =============================================================================
+
+$global-z-index: 		        1000 !default;
+
+$z-index-navbar-fixed:       $global-z-index !default;
+$z-index-sticky:             $global-z-index + 10 !default;
+$z-index-dropdown:           $global-z-index + 20 !default;
+$z-index-popover:            $global-z-index + 30 !default;
+$z-index-offcanvas:          $global-z-index + 90 !default;
+$z-index-dimmer:             $global-z-index + 100 !default;
+$z-index-modal:              $global-z-index + 110 !default;
+$z-index-datepicker:         $global-z-index + 120 !default;
+$z-index-pureview:           $global-z-index + 120 !default;
+$z-index-nprogress:          $global-z-index + 1000 !default;
+
+// Widgets
+$z-index-navbar:             $global-z-index + 10 !default;
+$z-index-header-fixed:       $global-z-index + 10 !default;
+$z-index-gotop-fixed:        $global-z-index + 40 !default;
+$z-index-menu:               $global-z-index + 50 !default;

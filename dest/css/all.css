@@ -1,0 +1,6 @@
+@import url(index.css);
+@import url(none.css);
+body {
+  font-size: 10px; }
+  body .all {
+    border: 1px solid #ccc; }
