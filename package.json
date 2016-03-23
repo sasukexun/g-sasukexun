@@ -1,7 +1,7 @@
 {
   "name": "gulp-sasukexun",
   "version": "1.0.0",
-  "description": "npm install graceful-fs@^4.0.0\r npm install  lodash@^4.0.0\r throw er; // Unhandled 'error' event\r       ^\r Error: spawn D:\\git\\gulp-sasukexun\\node_modules\\.npminstall\\jpegtran-bin\\3.0.6\\jpegtran-bin\\vendor\\jpegtran.exe ENOENT",
+  "description": "",
   "main": "gulpfile.js",
   "dependencies": {
     "gulp": "^3.9.1",
